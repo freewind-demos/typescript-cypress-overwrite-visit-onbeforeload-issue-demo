@@ -1,5 +1,5 @@
 describe('cypress', () => {
-  it('should get predefined "hello" message when visit', () => {
+  it('should using overrode cy.visit correctly', () => {
     cy.visit('https://example.cypress.io/');
 
     // if you comment the following line, `onBeforeLoad` in overrode visit will run

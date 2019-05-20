@@ -1,7 +1,7 @@
 TypeScript Cypress Overwrite "visit" "onBeforeLoad" Issue Demo
 ==============================================================
 
-If we override `visit`, the `onBeforeLoad` lifecycle method still won't be run in some cases.
+If we override `visit`, the `onBeforeLoad` lifecycle method still not be called in some cases.
 
 See:
 - ./cypress/support/commands.ts
