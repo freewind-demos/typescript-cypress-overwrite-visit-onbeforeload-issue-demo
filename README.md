@@ -7,6 +7,18 @@ See:
 - ./cypress/support/commands.ts
 - ./cypress/integration/hello_spec.ts
 
+Fixed:
+
+When override the 'visit' method, we should return the value of original function.
+
+It's an typing issue:
+
+```
+overwrite(name: string, fn: (...args: any[]) => void): void
+```
+
+the `fn` should not have `void` return type.
+
 ```
 npm install
 
